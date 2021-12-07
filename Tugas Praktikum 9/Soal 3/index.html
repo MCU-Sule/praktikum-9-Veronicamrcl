@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Veronica Marcella Angela Simalngo 2172042">
+    <title>Soal 3</title>
+    <style>
+        div{ float: left;
+        border: 1px solid black ;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        let a = prompt ("minta berapa obstacles")
+        let angka = []
+        for(i=0; i<a; i++){
+        let b =Math.floor( Math.random()*25)
+            angka.push (b)} 
+        for (i=0; i<25; i++){ 
+            for (j=0; j<angka.length; j++)
+            if(angka[j]==i) {
+        document.write("<div style='width:19%; background-color:brown; color:white;'>" + i + "</div>")
+                break
+    }
+        
+        if(j==angka.length) {
+            document.write("<div style='width:19%;'>" + i + "</div>")
+        }
+    
+        }
+    
+    </script>
+</body>
+</html>

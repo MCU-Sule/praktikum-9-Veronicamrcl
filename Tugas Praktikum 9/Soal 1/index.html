@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Veronica Marcella Angela Simalngo 2172042">
+    <title>Soal 1</title>
+    <style>
+        #lingkaran {
+            border-radius: 100%;
+            background-color: grey;
+            border: solid black 2px;
+            width: 25px;
+            height: 30px;
+            float: left;
+            padding-left: 15px;
+            padding-top: 10px;
+        
+        }
+        
+        #bola {margin-left: auto;
+        margin-right: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        
+         let a = prompt ("berapa N*N bola yang ingin dibuat?")
+         
+         function bola (){
+        document.write ("<div id=bola style='width:"+50*a+"px; '>")
+        for(i=a*a; i>0; i--){
+            document.write("<div id=lingkaran >" +i+ "</div>")
+        }
+        document.write ("</div>")
+         }
+
+         function bola2 (){
+         document.write ("<div id=bola style='width:"+50*a+"px; '>")
+        for(i=a*a; i>0; i --){
+            document.write("<div id=lingkaran >" +i+ "</div>")
+        }
+        document.write ("</div>")
+         }
+
+        if(a<=3){
+        bola ();}
+
+        else{
+            bola2();
+        }
+    </script>
+</body>
+</html>
